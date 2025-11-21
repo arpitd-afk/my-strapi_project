@@ -553,8 +553,11 @@ export interface ApiCouponCoupon extends Struct.CollectionTypeSchema {
     Coupon_code: Schema.Attribute.String;
     Coupon_condition: Schema.Attribute.String;
     Coupon_discount: Schema.Attribute.Decimal;
+    Coupon_expiry_days: Schema.Attribute.Integer;
+    Coupon_marketing_type: Schema.Attribute.String;
     Coupon_name: Schema.Attribute.String;
     Coupon_status: Schema.Attribute.Boolean;
+    Coupon_suggestion_text: Schema.Attribute.String;
     Coupon_total: Schema.Attribute.Decimal;
     Coupon_type: Schema.Attribute.String & Schema.Attribute.DefaultTo<'P'>;
     createdAt: Schema.Attribute.DateTime;
@@ -567,6 +570,8 @@ export interface ApiCouponCoupon extends Struct.CollectionTypeSchema {
       'api::coupon.coupon'
     > &
       Schema.Attribute.Private;
+    Order_count_from: Schema.Attribute.Integer;
+    Order_count_to: Schema.Attribute.Integer;
     publishedAt: Schema.Attribute.DateTime;
     Sort_coupon: Schema.Attribute.Integer;
     Start_date: Schema.Attribute.DateTime;

@@ -41,6 +41,21 @@
     },
     "Coupon_condition": {
       "type": "string"
+    },
+    "Coupon_expiry_days": {
+      "type": "integer"
+    },
+    "Order_count_from": {
+      "type": "integer"
+    },
+    "Order_count_to": {
+      "type": "integer"
+    },
+    "Coupon_marketing_type": {
+      "type": "string"
+    },
+    "Coupon_suggestion_text": {
+      "type": "string"
     }
   }
 }
