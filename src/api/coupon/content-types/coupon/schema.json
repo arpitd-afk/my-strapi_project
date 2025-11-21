@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "coupons",
+  "info": {
+    "singularName": "coupon",
+    "pluralName": "coupons",
+    "displayName": "Coupon"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Coupon_code": {
+      "type": "string"
+    },
+    "Coupon_status": {
+      "type": "boolean"
+    },
+    "Coupon_name": {
+      "type": "string"
+    },
+    "Coupon_type": {
+      "type": "string",
+      "default": "P"
+    },
+    "Start_date": {
+      "type": "datetime"
+    },
+    "End_date": {
+      "type": "datetime"
+    },
+    "Coupon_discount": {
+      "type": "decimal"
+    },
+    "Coupon_total": {
+      "type": "decimal"
+    },
+    "Sort_coupon": {
+      "type": "integer"
+    },
+    "Coupon_condition": {
+      "type": "string"
+    }
+  }
+}

@@ -11,6 +11,12 @@ Icon
 ._*
 
 
+
+/node_modules
+/.pnp
+.pnp.js
+package-lock.json
+
 ############################
 # Linux
 ############################

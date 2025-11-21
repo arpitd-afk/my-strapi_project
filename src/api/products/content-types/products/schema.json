@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "productsd",
+  "info": {
+    "singularName": "products",
+    "pluralName": "productsd",
+    "displayName": "Products"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ProductName": {
+      "type": "string"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category"
+    },
+    "Price": {
+      "type": "integer"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "ProductName"
+    },
+    "Product_images": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "ProductImageAlt": {
+      "type": "string"
+    },
+    "Quantity": {
+      "type": "integer"
+    },
+    "product_status": {
+      "type": "boolean"
+    },
+    "ProductDescription": {
+      "type": "text"
+    }
+  }
+}
